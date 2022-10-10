@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+.dayContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    height: 350px;
+    width: 100%;
+}
+
+.day-info {
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.day-info.temp {
+    display: flex;
+    justify-content: space-between;
+}
