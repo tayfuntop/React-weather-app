@@ -2,32 +2,37 @@
     display: flex;
     justify-content: center;
     margin-top: 5px;
-    padding: 20px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-    width: 93%;
+    width: 100%;
 }
 
 .day {
-    z-index: 101;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    min-width: 50px;
+    width: 50px;
     border-radius: 10px;
     transition: 300ms;
     margin: 2px;
 }
 
 .day:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
     cursor: pointer;
     background-color: rgba(0, 0, 0, .2);
 }
 
-
+.day.active {
+    /* transform: scale(1.05); */
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .2);
+}
 
 .info {
     display: flex;
