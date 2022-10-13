@@ -4,10 +4,11 @@ import { useWeather } from "../../context/weatherApi";
  
 function Dropdown() {
 
-  const { setCity } = useWeather();
+  const { setCity, setIndex, index } = useWeather();
 
   const getRequest = (e) => {
     setCity(cities.filter(item => item.id === Number(e.target.value))[0])
+    setIndex(index);
   };
 
   return (

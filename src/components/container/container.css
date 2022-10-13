@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 .navBar {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5px;
     border-radius: 20px;
-    width: 350px;
+    width: 360px;
 }

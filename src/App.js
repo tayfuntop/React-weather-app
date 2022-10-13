@@ -4,7 +4,7 @@ import Container from "./components/container/container";
 
 function App() {
   return (
-    <div className="App">
+    <div id="Application">
       <WeatherProvider>
         <Container />
       </WeatherProvider>

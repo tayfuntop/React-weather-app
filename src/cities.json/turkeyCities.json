@@ -9,11 +9,11 @@
   },
   {
   "id": 2,
-  "name": "Adıyaman",
+  "name": "Adiyaman",
   "latitude": "37.7648",
   "longitude": "38.2786",
   "population": 602774,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 3,
@@ -29,7 +29,7 @@
   "latitude": "39.7191",
   "longitude": "43.0503",
   "population": 547210,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 5,
@@ -65,7 +65,7 @@
   },
   {
   "id": 9,
-  "name": "Aydın",
+  "name": "Aydin",
   "latitude": "37.8560",
   "longitude": "27.8416",
   "population": 1053506,
@@ -73,7 +73,7 @@
   },
   {
   "id": 10,
-  "name": "Balıkesir",
+  "name": "Balikesir",
   "latitude": "39.6484",
   "longitude": "27.8826",
   "population": 1186688,
@@ -93,7 +93,7 @@
   "latitude": "39.0626",
   "longitude": "40.7696",
   "population": 267184,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 13,
@@ -101,7 +101,7 @@
   "latitude": "38.3938",
   "longitude": "42.1232",
   "population": 267184,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 14,
@@ -137,7 +137,7 @@
   },
   {
   "id": 18,
-  "name": "Çankırı",
+  "name": "Cankiri",
   "latitude": "40.6013",
   "longitude": "33.6134",
   "population": 180945,
@@ -161,11 +161,11 @@
   },
   {
   "id": 21,
-  "name": "Diyarbakır",
+  "name": "Diyarbakir",
   "latitude": "37.9144",
   "longitude": "40.2306",
   "population": 1654196,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 22,
@@ -177,11 +177,11 @@
   },
   {
   "id": 23,
-  "name": "Elâzığ",
+  "name": "Elazig",
   "latitude": "38.6810",
   "longitude": "39.2264",
   "population": 574304,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 24,
@@ -189,7 +189,7 @@
   "latitude": "39.7500",
   "longitude": "39.5000",
   "population": 222918,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 25,
@@ -197,11 +197,11 @@
   "latitude": "39.9000",
   "longitude": "41.2700",
   "population": 762321,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 26,
-  "name": "Eskişehir",
+  "name": "Eskisehir",
   "latitude": "39.7767",
   "longitude": "30.5206",
   "population": 826716,
@@ -213,7 +213,7 @@
   "latitude": "37.0662",
   "longitude": "37.3833",
   "population": 1931836,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 28,
@@ -233,11 +233,11 @@
   },
   {
   "id": 30,
-  "name": "Hakkâri",
+  "name": "Hakkari",
   "latitude": "37.5833",
   "longitude": "43.7333",
   "population": 278775,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 31,
@@ -285,7 +285,7 @@
   "latitude": "40.6167",
   "longitude": "43.1000",
   "population": 292660,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 37,
@@ -305,7 +305,7 @@
   },
   {
   "id": 39,
-  "name": "Kırklareli",
+  "name": "Kirklareli",
   "latitude": "41.7333",
   "longitude": "27.2167",
   "population": 346973,
@@ -313,7 +313,7 @@
   },
   {
   "id": 40,
-  "name": "Kırşehir",
+  "name": "Kirsehir",
   "latitude": "39.1425",
   "longitude": "34.1709",
   "population": 225562,
@@ -349,7 +349,7 @@
   "latitude": "38.3552",
   "longitude": "38.3095",
   "population": 772904,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 45,
@@ -373,11 +373,11 @@
   "latitude": "37.3212",
   "longitude": "40.7245",
   "population": 796591,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 48,
-  "name": "Muğla",
+  "name": "Mugla",
   "latitude": "37.2153",
   "longitude": "28.3636",
   "population": 908877,
@@ -389,7 +389,7 @@
   "latitude": "38.9462",
   "longitude": "41.7539",
   "population": 408728,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 50,
@@ -401,7 +401,7 @@
   },
   {
   "id": 51,
-  "name": "Niğde",
+  "name": "Nigde",
   "latitude": "37.9667",
   "longitude": "34.6833",
   "population": 346114,
@@ -445,7 +445,7 @@
   "latitude": "37.9333",
   "longitude": "41.9500",
   "population": 320351,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 57,
@@ -465,7 +465,7 @@
   },
   {
   "id": 59,
-  "name": "Tekirdağ",
+  "name": "Tekirdag",
   "latitude": "40.9833",
   "longitude": "27.5167",
   "population": 937910,
@@ -493,15 +493,15 @@
   "latitude": "39.3074",
   "longitude": "39.4388",
   "population": 86076,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 63,
-  "name": "Şanlıurfa",
+  "name": "Sanliurfa",
   "latitude": "37.1591",
   "longitude": "38.7969",
   "population": 1892320,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 64,
@@ -517,7 +517,7 @@
   "latitude": "38.4891",
   "longitude": "43.4089",
   "population": 1096397,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 66,
@@ -561,7 +561,7 @@
   },
   {
   "id": 71,
-  "name": "Kırıkkale",
+  "name": "Kirikkale",
   "latitude": "39.8468",
   "longitude": "33.5153",
   "population": 270271,
@@ -573,19 +573,19 @@
   "latitude": "37.8812",
   "longitude": "41.1351",
   "population": 566633,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 73,
-  "name": "Şırnak",
+  "name": "Sirnak",
   "latitude": "37.4187",
   "longitude": "42.4918",
   "population": 490184,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 74,
-  "name": "Bartın",
+  "name": "Bartin",
   "latitude": "41.5811",
   "longitude": "32.4610",
   "population": 190708,
@@ -597,15 +597,15 @@
   "latitude": "41.1105",
   "longitude": "42.7022",
   "population": 99265,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 76,
-  "name": "Iğdır",
+  "name": "Igdir",
   "latitude": "39.8880",
   "longitude": "44.0048",
   "population": 192435,
-  "region": "Doğu Anadolu"
+  "region": "Dogu Anadolu"
   },
   {
   "id": 77,
@@ -629,7 +629,7 @@
   "latitude": "36.7184",
   "longitude": "37.1212",
   "population": 130655,
-  "region": "Güneydoğu Anadolu"
+  "region": "Güneydogu Anadolu"
   },
   {
   "id": 80,
@@ -641,7 +641,7 @@
   },
   {
   "id": 81,
-  "name": "Düzce",
+  "name": "Duzce",
   "latitude": "40.8438",
   "longitude": "31.1565",
   "population": 360388,

@@ -1,9 +1,23 @@
-.App {
+#Application {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #181c1f;
+}
+.open-blue {
+    background-color: #80b2d9 !important;
 }
 
+.gray {
+    background-color: rgb(97, 97, 97) !important;
+}
+
+.open-gray {
+    background-color: rgb(169, 169, 169) !important;
+}
+
+.white {
+    background-color: #c7c7c7 !important;
+}
 

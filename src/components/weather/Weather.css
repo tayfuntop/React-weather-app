@@ -1,0 +1,355 @@
+.weather {
+    position: relative;
+    height: 150px;
+    margin-top: 15px;
+}
+
+.sunny {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(231, 231, 44);
+    border-radius: 50%;
+    animation: sunny 40s linear infinite;
+}
+
+.sunny span:nth-child(1) {
+    position: absolute;
+    top: -15px;
+    left: 48px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(2) {
+    position: absolute;
+    rotate: 45deg;
+    top: 2px;
+    left: 92px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(3) {
+    position: absolute;
+    rotate: 90deg;
+    top: 44px;
+    left: 108px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(4) {
+    position: absolute;
+    rotate: 135deg;
+    top: 88px;
+    left: 92px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(5) {
+    position: absolute;
+    top: 105px;
+    left: 48px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(6) {
+    position: absolute;
+    rotate: 225deg;
+    top: 88px;
+    left: 3px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(7) {
+    position: absolute;
+    rotate: 270deg;
+    top: 44px;
+    left: -13px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.sunny span:nth-child(8) {
+    position: absolute;
+    rotate: 315deg;
+    top: 2px;
+    left: 3px;
+    width: 5px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgb(231, 231, 44);
+}
+
+.overcast {
+    position: relative;
+    top: 50px;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 100px;
+    animation: slide 15s linear infinite;
+}
+
+.overcast:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 50%;
+    box-shadow: 50px 0 0 20px rgb(163, 163, 163);
+    z-index: 1;
+}
+
+.overcast.clear:after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(231, 231, 44);
+    border-radius: 50%;
+}
+
+.cloudy {
+    position: relative;
+    top: 50px;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 100px;
+    animation: slide 15s linear infinite;
+}
+
+.cloudy:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 50%;
+    box-shadow: 50px 0 0 20px rgb(189, 189, 189);
+    z-index: 1;
+}
+
+.cloudy.clear:after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(231, 231, 44);
+    border-radius: 50%;
+}
+
+.rainy {
+    position: relative;
+    top: 50px;
+    width: 185px;
+    height: 50px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 100px;
+}
+
+.rainy:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 50%;
+    box-shadow: 50px 0 0 20px rgb(163, 163, 163);
+    z-index: 1;
+}
+
+.rainy.clear:after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(231, 231, 44);
+    border-radius: 50%;
+}
+
+.rain {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+    top: 58px;
+}
+
+.rain span {
+    position: relative;
+    bottom: 10px;
+    width: 3px;
+    height: 10px;
+    background-color: rgb(95, 179, 235);
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: rainy 5s linear infinite;
+    animation-duration: calc(25s / var(--i));
+    transform-origin: bottom;
+}
+
+.heavy.rain span {
+    position: relative;
+    bottom: 10px;
+    width: 3px;
+    height: 10px;
+    background-color: rgb(95, 179, 235);
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: rainy 5s linear infinite;
+    animation-duration: calc(12s / var(--i));
+    transform-origin: bottom;
+}
+
+.snowy {
+    position: relative;
+    top: 50px;
+    width: 185px;
+    height: 50px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 100px;
+}
+
+.snowy:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 50%;
+    box-shadow: 50px 0 0 20px rgb(163, 163, 163);
+    z-index: 1;
+}
+
+.snowy.clear:after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(231, 231, 44);
+    border-radius: 50%;
+}
+
+.snow {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+    top: 58px;
+}
+
+.snow span {
+    position: relative;
+    bottom: 10px;
+    animation: snowy 5s linear infinite;
+    animation-duration: calc(75s / var(--i));
+    transform-origin: bottom;
+}
+
+.snow.heavy span {
+    position: relative;
+    bottom: 10px;
+    animation: snowy 5s linear infinite;
+    animation-duration: calc(100s / var(--i));
+    transform-origin: bottom;
+}
+
+.snow span:after {
+   font-family: "Font Awesome 5 Free";
+   content: "\f2dc";
+   font-size: 7px;
+   margin: 0 3px;
+   color: #fff;
+}
+
+.heavy.snow span:after {
+   font-family: "Font Awesome 5 Free";
+   content: "\f2dc";
+   margin: 0;
+   font-size: 13px;
+   color: #fff;
+}
+
+@keyframes rainy {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    70% {
+        transform: translateY(256px) scale(1);
+    }
+
+    100% {
+        transform: translateY(256px) scale(0);
+    }
+}
+
+@keyframes snowy {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    70% {
+        transform: translateY(248px) scale(1);
+    }
+
+    100% {
+        transform: translateY(248px) scale(0);
+    }
+}
+
+@keyframes sunny {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}

@@ -9,10 +9,10 @@ function Container() {
 
     <div>
       <div className="container ">
-        <DayContent />
+      <Dropdown /> 
         <div className="navBar">
+          <DayContent />
           <Content />
-          <Dropdown />
         </div>
       </div>
     </div>
