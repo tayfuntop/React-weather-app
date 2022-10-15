@@ -52,7 +52,7 @@ function DayContent() {
         </div>
       </div>
     );
-  };
+  }
 };
 
 export default DayContent;
