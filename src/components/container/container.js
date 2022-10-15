@@ -1,6 +1,6 @@
 import DayContent from "../dayContent/dayContent";
 import Dropdown from "../dropdown/dropdown";
-import Content from "../content/content"
+import Days from "../content/days";
 import "./container.css"
 
 function Container() {
@@ -9,10 +9,10 @@ function Container() {
 
     <div>
       <div className="container ">
-      <Dropdown /> 
+        <Dropdown />
         <div className="navBar">
           <DayContent />
-          <Content />
+          <Days />
         </div>
       </div>
     </div>

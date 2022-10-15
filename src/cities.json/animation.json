@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Patchy rain possible",
+    "statusClassName": "rainy clear",
+    "fallClassName": "rain",
+    "backgroundColor": "open-gray"
+  },
+  {
+    "name": "Sunny",
+    "statusClassName": "sunny",
+    "fallClassName": "",
+    "backgroundColor": "open-blue"
+  },
+  {
+    "name": "Moderate rain",
+    "statusClassName": "rainy",
+    "fallClassName": "rain",
+    "backgroundColor": "gray"
+  },
+  {
+    "name": "Partly cloudy",
+    "statusClassName": "cloudy clear",
+    "fallClassName": "",
+    "backgroundColor": "open-gray"
+  },
+  {
+    "name": "Heavy rain",
+    "statusClassName": "rainy",
+    "fallClassName": "rain heavy",
+    "backgroundColor": "gray"
+  },
+  {
+    "name": "Overcast",
+    "statusClassName": "overcast",
+    "fallClassName": "",
+    "backgroundColor": "open-gray"
+  },
+  {
+    "name": "Cloudy",
+    "statusClassName": "cloudy",
+    "fallClassName": "",
+    "backgroundColor": "open-gray"
+  },
+  {
+    "name": "Moderate snow",
+    "statusClassName": "snowy",
+    "fallClassName": "snow heavy",
+    "backgroundColor": "white"
+  },
+  {
+    "name": "Light freezing rain",
+    "statusClassName": "snowy",
+    "fallClassName": "snow",
+    "backgroundColor": "white"
+  },
+  {
+    "name": "Light snow",
+    "statusClassName": "snowy",
+    "fallClassName": "snow",
+    "backgroundColor": "white"
+  },
+  {
+    "name": "Heavy snow",
+    "statusClassName": "snowy",
+    "fallClassName": "snow heavy",
+    "backgroundColor": "white"
+  },
+  {
+    "name": "Moderate or heavy snow showers",
+    "statusClassName": "snowy clear",
+    "fallClassName": "snow heavy",
+    "backgroundColor": "white"
+  },
+  {
+    "name": "Mist",
+    "statusClassName": "overcast",
+    "fallClassName": "",
+    "backgroundColor": "open-gray"
+  }
+]

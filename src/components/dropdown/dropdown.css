@@ -1,17 +1,64 @@
 .dropdown {
-    width: 100%;
-}
-#cityName {   
-    height: 40px;
-    width: 100%;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    padding: 10px;
-    outline: none;
-    background-color: rgba(255, 255, 255, .8);
+    width: 96%;
+    margin-left: -13px;
 }
 
-#cityName:hover {
+.inputCity {
+    margin-bottom: -10px;
+    font-size: 16px;
+    text-align: center;
+    height: 20px;
+    width: 94%;
+    outline: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(191, 210, 218, 0.9);
+    position: relative;
+}
+
+#list {
+    margin-top: 15px;
+    z-index: 5;
+    width: 345px;
+    opacity: 1;
+    position: absolute;
+    background-color: rgb(179, 211, 225);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    max-height: 196px;
+    overflow-y: scroll;
+    display: none;
+
+}
+
+#list.visible {
+    display: block;
+}
+
+#list::-webkit-scrollbar {
+    border-radius: 5px;
+    width: 15px;
+    background-color: rgb(172, 168, 168);
+}
+
+#list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(144, 196, 215);
+}
+
+.list-item {
+    padding: 10px;
+    transition: 300ms all;
+}
+
+.list-item:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(144, 196, 215);
+    border-radius: 10px;
     cursor: pointer;
 }

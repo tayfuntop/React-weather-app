@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+
 }
+
 .navBar {
     display: flex;
     flex-direction: column;

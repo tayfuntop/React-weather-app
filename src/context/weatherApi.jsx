@@ -1,63 +1,69 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import axios from "axios";
-// import info from "../cities.json/data.json"
-import condition from "../cities.json/condition.json"
+import animation from "../cities.json/animation.json"
 
 const WeatherContext = createContext();
 
 const apiUrl = "http://api.weatherapi.com/v1/forecast.json?";
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+
 const WeatherProvider = ({ children }) => {
 
   const [data, setData] = useState([]);
-  const [conditionName, setConditionName] = useState(condition);
-  const [index, setIndex] = useState(0);
+  const [animationData, setAnimationData] = useState(animation);
+  const [selectIndex, setSelectIndex] = useState(0);
   const [animationName, setAnimationName] = useState("");
   const [weatherDay, setWeatherDay] = useState({});
-  const [status, setStatus] = useState(false);
-  const [city, setCity] = useState(
-    {
-      id: 41,
-      name: "Kocaeli",
-      latitude: "40.8533",
-      longitude: "29.8815",
-      population: 1780055,
-      region: "Marmara"
-    }
-  );
+  const [statusDisplay, setStatusDisplay] = useState(false);
+  const [city, setCity] = useState("");
   
   const values =
   {
     day: [0,1,2,3,4,5,6], 
     setCity,
-    status,
+    statusDisplay,
     data,
     weatherDay,
     setWeatherDay,
-    index,
-    setIndex,
+    selectIndex,
+    setSelectIndex,
+    animationData,
+    setAnimationData,
     animationName,
-    conditionName,
-    setConditionName,
     setAnimationName,
   };
 
   useEffect(() => {
-    // setWeatherDay(data.forecast.forecastday[0])
-    // setStatus(true)
-    // setWeatherDay(data.forecast.forecastday[0])
-    // setAnimationName(data.forecast.forecastday[index].day.condition.text)
-    axios(`${apiUrl}key=${apiKey}&q=${city.name}&days=7&aqi=yes&alerts=no`)
+    if (city !== "") axios(`${apiUrl}key=${apiKey}&q=${city}&days=7&aqi=yes&alerts=no`)
       .then(item => {
-        setData(item.data)
-        setWeatherDay(item.data.forecast.forecastday[0])
-        setAnimationName(item.data.forecast.forecastday[index].day.condition.text)
-        setStatus(true)
+        setData(item.data);
+        setWeatherDay(item.data.forecast.forecastday[0]);
+        setAnimationName(item.data.forecast.forecastday[selectIndex].day.condition.text);
+        setStatusDisplay(true);
       })
       .catch(() => {
-        setStatus(false)
+        setStatusDisplay(false);
       })
-  }, [city])
+  }, [city]);
+  
+  useEffect(() => { 
+    const resolve = (position) => {
+      axios (`${apiUrl}key=${apiKey}&q=${position.coords.latitude},${position.coords.longitude}&days=7&aqi=yes&alerts=no`)
+        .then(item => {
+          setData(item.data);
+          setWeatherDay(item.data.forecast.forecastday[0]);
+          setAnimationName(item.data.forecast.forecastday[selectIndex].day.condition.text);
+          setStatusDisplay(true);
+        })
+        .catch(() => {
+          setStatusDisplay(false);
+        })
+    }
+    const reject = ()  => {
+      setCity("Kocaeli");
+    }
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  }, []);
   
   return (
     <WeatherContext.Provider value={values}>

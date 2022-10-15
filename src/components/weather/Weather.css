@@ -139,7 +139,7 @@
     top: 50px;
     width: 180px;
     height: 50px;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(181, 181, 181);
     border-radius: 100px;
     animation: slide 15s linear infinite;
 }
@@ -151,9 +151,9 @@
     left: 30px;
     width: 60px;
     height: 60px;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(181, 181, 181);
     border-radius: 50%;
-    box-shadow: 50px 0 0 20px rgb(189, 189, 189);
+    box-shadow: 50px 0 0 20px rgb(181, 181, 181);
     z-index: 1;
 }
 
@@ -293,19 +293,19 @@
 }
 
 .snow span:after {
-   font-family: "Font Awesome 5 Free";
-   content: "\f2dc";
-   font-size: 7px;
-   margin: 0 3px;
-   color: #fff;
+    font-family: "Font Awesome 5 Free";
+    content: "\f2dc";
+    font-size: 7px;
+    margin: 0 3px;
+    color: #fff;
 }
 
 .heavy.snow span:after {
-   font-family: "Font Awesome 5 Free";
-   content: "\f2dc";
-   margin: 0;
-   font-size: 13px;
-   color: #fff;
+    font-family: "Font Awesome 5 Free";
+    content: "\f2dc";
+    margin: 0;
+    font-size: 13px;
+    color: #fff;
 }
 
 @keyframes rainy {
@@ -340,6 +340,7 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -349,6 +350,7 @@
     0% {
         transform: translateX(-15px);
     }
+
     100% {
         transform: translateX(30px);
     }

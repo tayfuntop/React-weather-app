@@ -1,7 +1,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 96%;
 }
 
 .section {
@@ -12,7 +12,7 @@
     margin-bottom: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(191, 210, 218, 0.9);
 }
 
 .dayContent {
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(191, 210, 218, 0.9);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
     height: 380px;
     width: 100%;
@@ -32,13 +32,17 @@
     width: 60%;
     display: flex;
     justify-content: center;
-}   
+}
 
 .day-info.city {
     font-size: 32px;
+    max-height: 30px;
+    width: 300px;
+    overflow: hidden;
 }
 
 .day-info.temp {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }

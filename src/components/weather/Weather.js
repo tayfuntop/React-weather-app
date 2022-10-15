@@ -1,23 +1,27 @@
-import "./Weather.css"
-import { useWeather } from "../../context/weatherApi"
+import "./Weather.css";
+import { useWeather } from "../../context/weatherApi";
 
 function Weather() {
 
-  const { animationName, conditionName } = useWeather();
+  const { animationName, animationData } = useWeather();
 
-  
+
   const weatherStatusAnimation = () => {
     document.getElementById("Application").removeAttribute("class");
-    document.getElementById("Application").setAttribute("class", `${conditionName.filter(item => item.name === animationName)[0].backgroundColor}`)
-    return (
-      conditionName.filter(item => item.name === animationName)[0].statusClassName
-    );
+    if (animationData.filter(item => item.name === animationName).length !== 0) {
+      document.getElementById("Application").setAttribute("class", `app ${animationData.filter(item => item.name === animationName)[0].backgroundColor}`);
+      return (
+        animationData.filter(item => item.name === animationName)[0].statusClassName
+      );
+    }
   };
 
   const weatherFallAnimation = () => {
-    return (
-      conditionName.filter(item => item.name === animationName)[0].fallClassName
-    );
+    if (animationData.filter(item => item.name === animationName).length !== 0) {
+      return (
+        animationData.filter(item => item.name === animationName)[0].fallClassName
+      );
+    };
   };
 
   const fallRandomNumber = () => {
@@ -52,7 +56,7 @@ function Weather() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Weather
+export default Weather;
