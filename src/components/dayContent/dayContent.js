@@ -26,11 +26,11 @@ function DayContent() {
           <div className="day-info temp">
             <div className="max-temp">
               <div><b>Max Temp</b></div>
-              {parseInt(data.forecast.forecastday[selectIndex].day.maxtemp_c)}°C;
+              {parseInt(data.forecast.forecastday[selectIndex].day.maxtemp_c)}°C
             </div>
             <div className="min-temp">
               <div><b>Min Temp</b></div>
-              {parseInt(data.forecast.forecastday[selectIndex].day.mintemp_c)}°C;
+              {parseInt(data.forecast.forecastday[selectIndex].day.mintemp_c)}°C
             </div>
           </div>
           <div className="day-info">{data.forecast.forecastday[selectIndex].day.condition.text}</div>
