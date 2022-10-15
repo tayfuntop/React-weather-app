@@ -4,8 +4,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 10px;
-
+    margin-left: 20px;
 }
 
 .navBar {
@@ -13,5 +12,6 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
-    width: 360px;
+    width: 100%;
+    
 }

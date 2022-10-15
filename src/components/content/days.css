@@ -5,9 +5,9 @@
     border-radius: 10px;
     background-color: rgba(191, 210, 218, 0.9);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-    width: 96%;
+    width: 92%;
     height: 85px;
-    padding: 3px 0;
+    padding: 3px;
 }
 
 .day {
@@ -19,7 +19,6 @@
     width: 46px;
     border-radius: 10px;
     transition: 300ms;
-    margin: 1px;
     font-size: 12px;
 }
 

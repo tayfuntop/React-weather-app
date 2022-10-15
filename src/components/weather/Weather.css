@@ -293,19 +293,19 @@
 }
 
 .snow span:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f2dc";
-    font-size: 7px;
-    margin: 0 3px;
-    color: #fff;
+   font-family: "Font Awesome 5 Free";
+   content: "\f2dc";
+   font-size: 7px;
+   margin: 0 3px;
+   color: #fff;
 }
 
 .heavy.snow span:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f2dc";
-    margin: 0;
-    font-size: 13px;
-    color: #fff;
+   font-family: "Font Awesome 5 Free";
+   content: "\f2dc";
+   margin: 0;
+   font-size: 13px;
+   color: #fff;
 }
 
 @keyframes rainy {
@@ -340,7 +340,6 @@
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -350,7 +349,6 @@
     0% {
         transform: translateX(-15px);
     }
-
     100% {
         transform: translateX(30px);
     }

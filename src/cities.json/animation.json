@@ -72,6 +72,12 @@
     "backgroundColor": "white"
   },
   {
+    "name": "Patchy moderate snow",
+    "statusClassName": "snowy clear",
+    "fallClassName": "snow",
+    "backgroundColor": "white"
+  },
+  {
     "name": "Mist",
     "statusClassName": "overcast",
     "fallClassName": "",
