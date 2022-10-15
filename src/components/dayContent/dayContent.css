@@ -36,7 +36,8 @@
 
 .day-info.city {
     font-size: 32px;
-    max-height: 30px;
+    min-height: 35px;
+    max-height: 37px;
     width: 300px;
     overflow: hidden;
 }
