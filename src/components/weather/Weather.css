@@ -328,11 +328,11 @@
     }
 
     70% {
-        transform: translateY(245px) scale(1);
+        transform: translateY(244px) scale(1);
     }
 
     100% {
-        transform: translateY(245px) scale(0);
+        transform: translateY(244px) scale(0);
     }
 }
 
