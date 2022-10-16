@@ -36,9 +36,9 @@
 }
 
 .day-info.city {
-    font-size: 32px;
-    height: 45px;
-    max-width: 170px;
+    font-size: 22px;
+    height: 43px;
+    max-width: 200px;
     overflow: hidden;
     text-align: center;
 }

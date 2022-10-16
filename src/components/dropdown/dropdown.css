@@ -1,8 +1,8 @@
 .dropdown {
     width: 99%;
-    align-items: center;
+    /* align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .inputCity {
@@ -20,7 +20,7 @@
 #list {
     margin-top: 15px;
     z-index: 5;
-    width: 215px;
+    width: 99%;
     opacity: 1;
     position: absolute;
     top: 20px;
