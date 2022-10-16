@@ -16,10 +16,11 @@ const WeatherProvider = ({ children }) => {
   const [weatherDay, setWeatherDay] = useState({});
   const [statusDisplay, setStatusDisplay] = useState(false);
   const [city, setCity] = useState("");
-  
+  const [toastShow, setToastShow] = useState(false);
+
   const values =
   {
-    day: [0,1,2,3,4,5,6], 
+    day: [0, 1, 2, 3, 4, 5, 6],
     setCity,
     statusDisplay,
     data,
@@ -31,10 +32,18 @@ const WeatherProvider = ({ children }) => {
     setAnimationData,
     animationName,
     setAnimationName,
+    toastShow,
+    setToastShow,
   };
 
+
+
   useEffect(() => {
-    if (city !== "") axios(`${apiUrl}key=${apiKey}&q=${city}&days=7&aqi=yes&alerts=no`)
+    if (city !== "") axios({
+      method: "get",
+      url: `${apiUrl}key=${apiKey}&q=${city}&days=7&aqi=yes&alerts=no`,
+      timeout: 5000,
+    })
       .then(item => {
         setData(item.data);
         setWeatherDay(item.data.forecast.forecastday[0]);
@@ -43,12 +52,17 @@ const WeatherProvider = ({ children }) => {
       })
       .catch(() => {
         setStatusDisplay(false);
+        setToastShow(true);
       })
   }, [city]);
-  
-  useEffect(() => { 
+
+  useEffect(() => {
     const resolve = (position) => {
-      axios (`${apiUrl}key=${apiKey}&q=${position.coords.latitude},${position.coords.longitude}&days=7&aqi=yes&alerts=no`)
+      axios({
+        method: "get",
+        url: `${apiUrl}key=${apiKey}&q=${position.coords.latitude},${position.coords.longitude}&days=7&aqi=yes&alerts=no`,
+        timeout: 5000,
+      })
         .then(item => {
           setData(item.data);
           setWeatherDay(item.data.forecast.forecastday[0]);
@@ -57,14 +71,15 @@ const WeatherProvider = ({ children }) => {
         })
         .catch(() => {
           setStatusDisplay(false);
+          setToastShow(true);
         })
     }
-    const reject = ()  => {
+    const reject = () => {
       setCity("Kocaeli");
     }
     navigator.geolocation.getCurrentPosition(resolve, reject);
   }, []);
-  
+
   return (
     <WeatherContext.Provider value={values}>
       {children}

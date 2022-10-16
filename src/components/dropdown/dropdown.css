@@ -1,18 +1,15 @@
 .dropdown {
-    width: 315px;
-    margin-left: -13px;
+    width: 99%;
 }
 
 .inputCity {
-    margin-bottom: -10px;
     font-size: 16px;
     text-align: center;
-    height: 20px;
-    width: 90%;
+    height: 35px;
+    width: 99%;
     outline: none;
     border: solid 1px black;
     border-radius: 10px;
-    padding: 10px;
     background-color: rgba(191, 210, 218, 0.9);
     position: relative;
 }
@@ -20,9 +17,10 @@
 #list {
     margin-top: 15px;
     z-index: 5;
-    width: 305px;
+    width: 99%;
     opacity: 1;
     position: absolute;
+    top: 20px;
     background-color: rgb(179, 211, 225);
     border-radius: 10px;
     list-style-type: none;

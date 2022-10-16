@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 .navBar {
@@ -13,5 +12,4 @@
     justify-content: center;
     border-radius: 20px;
     width: 100%;
-    
 }

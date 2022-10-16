@@ -1,6 +1,8 @@
 import "./dropdown.css";
 import cities from "../../cities.json/turkeyCities.json";
 import { useWeather } from "../../context/weatherApi";
+import Spinners from "../spinner/spinners";
+import Toasts from "../toast/toast"
 import { useState } from "react";
 
 function Dropdown() {
@@ -35,26 +37,48 @@ function Dropdown() {
       e.target.value.toLocaleLowerCase()));
   };
 
-  return (
-    <div className="dropdown">
-      <form action="">
-        <input className="inputCity" onChange={changeCityFunction} placeholder="Please enter city.." type="text" />
-        <ul id="list">
-          {
-            listCity.map((item, index) => {
-              return (
-                <li key={index} onClick={findClickCityFunction} className="list-item">{item.name}</li>
-              )
-            })
-          }
-        </ul>
-        <button style={{ "opacity": "0" }} onClick={FindEnterFunction}></button>
-      </form>
-      {
-        !statusDisplay && <h2 style={{"textAlign": "center"}}>Page Failed to load Please try again!</h2> 
-      }
-    </div>
-  );
-};
+  if (statusDisplay) {
+    return (
+      <div className="dropdown">
+        <form action="">
+          <input className="inputCity" onChange={changeCityFunction} placeholder="Please enter city.." type="text" />
+          <ul id="list">
+            {
+              listCity.map((item, index) => {
+                return (
+                  <li key={index} onClick={findClickCityFunction} className="list-item">{item.name}</li>
+                )
+              })
+            }
+          </ul>
+          <button style={{ "opacity": "0" }} onClick={FindEnterFunction}></button>
+        </form>
+      </div>
+    );
+  } else {
+    return (
+      <>
+      <div className="dropdown">
+        <form action="">
+          <input className="inputCity" onChange={changeCityFunction} placeholder="Please enter city.." type="text" />
+          <ul id="list">
+            {
+              listCity.map((item, index) => {
+                return (
+                  <li key={index} onClick={findClickCityFunction} className="list-item">{item.name}</li>
+                )
+              })
+            }
+          </ul>
+          <button style={{ "opacity": "0" }} onClick={FindEnterFunction}></button>
+        </form>
+        <Spinners />
+      </div>
+      <Toasts />
+      </>
+    );
+  }
+  
+}
 
 export default Dropdown;
