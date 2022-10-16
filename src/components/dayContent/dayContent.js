@@ -38,7 +38,7 @@ function DayContent() {
 
         <div className="section">
           <div className="info">
-            <div>HUMANIDY</div>
+            <div>HUMIDITY</div>
             <div>%{data.forecast.forecastday[selectIndex].day.avghumidity}</div>
           </div>
           <div className="info">

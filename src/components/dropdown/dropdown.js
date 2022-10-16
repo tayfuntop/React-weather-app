@@ -72,8 +72,8 @@ function Dropdown() {
           </ul>
           <button style={{ "opacity": "0" }} onClick={FindEnterFunction}></button>
         </form>
-        <Spinners />
       </div>
+      <Spinners />
       <Toasts />
       </>
     );
