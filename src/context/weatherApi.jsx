@@ -6,7 +6,8 @@ const WeatherContext = createContext();
 
 
 const apiUrl = "https://api.weatherapi.com/v1/forecast.json?";
-const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+// const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+const apiKey = "2e3ea33c32fd409cbbd145307222110";
 
 const WeatherProvider = ({ children }) => {
 
