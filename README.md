@@ -1,6 +1,6 @@
 # WEATHER APP
 
-[PROJE LINK](https://razumihin41.github.io/React-weather-app/)
+[PROJE LINK](https://tayfuntop.github.io/React-weather-app/)
 
 ![Proje Gifi](/public/project.gif)
 
