@@ -1,12 +1,14 @@
-
-
 [PROJE LINK](https://tayfuntop.github.io/React-weather-app/)
 
-
-
-
-
 # WEATHER APP
+
+## 🎥 Project Gif
+
+![Proje Gifi](/public/project.gif)
+
+## 📷 Project Image
+
+![Proje Görseli](/public/project.jpg)
 
 ## 🛠 Technologies and tools
 
@@ -36,12 +38,3 @@ npm install
 npm start
 These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
 ```
-
-
-## 🎥 Project Gif
-
-![Proje Gifi](/public/project.gif)
-
-## 📷 Project Image
-
-![Proje Görseli](/public/project.jpg)
