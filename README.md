@@ -31,10 +31,15 @@ git clone https://github.com/tayfuntop/React-weather-app.git
 To use it after cloning the project:
 ```
 cd React-weather-app
+
 code .
 open terminal
+
 Run the following commands in the project folder to install the project dependencies.
 npm install
+
 npm start
-These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
+
+These instructions will get a copy of the project up and 
+running on your local machine for development and testing purposes.
 ```
