@@ -1,4 +1,4 @@
-[PROJE LINK](https://tayfuntop.github.io/React-weather-app/)
+[PROJECT LINK](https://tayfuntop.github.io/React-weather-app/)
 
 # WEATHER APP
 
