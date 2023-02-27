@@ -2,14 +2,6 @@
 
 # WEATHER APP
 
-## 📷 Project Image
-
-![Proje Görseli](/public/project.jpg)
-
-## 🎥 Project Video
-
-https://user-images.githubusercontent.com/100048051/221173450-5d3f5768-b2b5-42d5-b7fe-7ca886427285.mp4
-
 ## 🛠 Technologies and tools
 
 <p>
@@ -44,3 +36,11 @@ npm start
 These instructions will get a copy of the project up and 
 running on your local machine for development and testing purposes.
 ```
+
+## 📷 Project Image
+
+![Proje Görseli](/public/project.jpg)
+
+## 🎥 Project Video
+
+https://user-images.githubusercontent.com/100048051/221173450-5d3f5768-b2b5-42d5-b7fe-7ca886427285.mp4
