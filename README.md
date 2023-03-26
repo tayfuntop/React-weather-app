@@ -5,7 +5,7 @@
 ## 🛠 Technologies and tools
 
 <p>
-<img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=blue" alt="React logo" title="React" height="25" />
+<img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=blue" alt="React logo" title="React" height="25" />
 <img src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E" alt="JavaScript logo" title="JavaScript" height="25" />
 <img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" />
 <img src="https://img.shields.io/badge/Bootstrap-282C34?logo=bootstrap&logoColor=9267ce" alt="Bootstrap logo" title="Bootstrap" height="25" />
